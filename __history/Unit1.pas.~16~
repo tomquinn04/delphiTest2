@@ -44,9 +44,21 @@ end;
 
 procedure TForm1.LabeledEdit1Change(Sender: TObject);
 begin
-    FDQuery1.SQL.Text := 'SELECT * FROM table1 WHERE table1_column1 LIKE "%' + LabeledEdit1.Text + '%";';
-    FDQuery1.Open;
-    Label1.Caption := LabeledEdit1.Text;
+
+  if LabeledEdit1.Text <> Null then
+    begin
+      FDQuery1.SQL.Text := 'SELECT * FROM table1 WHERE CONTAINS "' + LabeledEdit1.Text + '";';
+      FDQuery1.Open;
+      Label1.Caption := LabeledEdit1.Text   ;
+
+    end
+  else
+    begin
+      FDQuery1.SQL.Text := 'SELECT * FROM table1;';
+      FDQuery1.Open;
+      Label1.Caption := 'empty';
+    end;
+
 end;
 
 end.
