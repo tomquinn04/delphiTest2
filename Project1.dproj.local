@@ -1,9 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<BorlandProject>
-  <Transactions>
-    <Transaction>2021/10/12 14:08:39.619,=C:\Users\tquin\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2021/10/12 14:10:22.986,C:\Users\tquin\Documents\GitHub\delphiTest2\Unit1.dfm=C:\Users\tquin\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
-    <Transaction>2021/10/12 14:10:22.986,C:\Users\tquin\Documents\GitHub\delphiTest2\Unit1.pas=C:\Users\tquin\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2021/10/12 15:00:30.052,C:\Users\tquin\Documents\GitHub\delphiTest2\Project1.dproj=C:\Users\tquin\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
-  </Transactions>
-</BorlandProject>
