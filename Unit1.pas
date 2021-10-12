@@ -44,9 +44,9 @@ end;
 
 procedure TForm1.LabeledEdit1Change(Sender: TObject);
 begin
-    FDQuery1.SQL.Text := 'SELECT * FROM table1 WHERE table1_column1 LIKE "%' + LabeledEdit1.Text + '%";';
-    FDQuery1.Open;
-    Label1.Caption := LabeledEdit1.Text;
+    FDQuery1.SQL.Text := 'SELECT * FROM table1 WHERE table1_column1 LIKE "%' + LabeledEdit1.Text + '%";'; {searches column1 for records containing the searched text}
+    FDQuery1.Open;  {updates SQL query}
+    Label1.Caption := LabeledEdit1.Text;    {update label for debug purposes}
 end;
 
 end.
