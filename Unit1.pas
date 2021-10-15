@@ -22,6 +22,7 @@ type
     Button1: TButton;
     LabeledEdit1: TLabeledEdit;
     Label1: TLabel;
+    LabeledEdit2: TLabeledEdit;
     procedure Button1Click(Sender: TObject);
     procedure LabeledEdit1Change(Sender: TObject);
   private
@@ -39,7 +40,9 @@ implementation
 
 procedure TForm1.Button1Click(Sender: TObject);
 begin
-  FDQuery1.Insert;
+  FDQuery1.ExecSql('INSERT INTO table1 (table1_column1) VALUES ("' + LabeledEdit2.Text + '");');
+  LabeledEdit1.Text := 'x';
+  LabeledEdit1.Text := '';
 end;
 
 procedure TForm1.LabeledEdit1Change(Sender: TObject);
