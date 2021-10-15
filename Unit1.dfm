@@ -35,10 +35,10 @@ object Form1: TForm1
   end
   object Button1: TButton
     Left = 608
-    Top = 200
+    Top = 288
     Width = 75
     Height = 25
-    Caption = 'Button1'
+    Caption = 'Add'
     TabOrder = 1
     OnClick = Button1Click
   end
@@ -52,6 +52,16 @@ object Form1: TForm1
     EditLabel.Caption = 'Search...'
     TabOrder = 2
     OnChange = LabeledEdit1Change
+  end
+  object LabeledEdit2: TLabeledEdit
+    Left = 608
+    Top = 260
+    Width = 214
+    Height = 22
+    EditLabel.Width = 69
+    EditLabel.Height = 14
+    EditLabel.Caption = 'Add a row...'
+    TabOrder = 3
   end
   object FDConnection1: TFDConnection
     Params.Strings = (
